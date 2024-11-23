@@ -1,0 +1,210 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>Pulse.PLMSuite.$(MSBuildProjectName)</AssemblyName>
+    <RootNamespace>Pulse.PLMSuite</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Green.ico" />
+    <None Remove="images\constraint-angle-driven.svg" />
+    <None Remove="images\constraint-diameter-driven.svg" />
+    <None Remove="images\constraint-distance-driven.svg" />
+    <None Remove="images\constraint-equal.svg" />
+    <None Remove="images\constraint-horizontal.svg" />
+    <None Remove="images\constraint-parallel.svg" />
+    <None Remove="images\constraint-perpendicular.svg" />
+    <None Remove="images\constraint-tangent.svg" />
+    <None Remove="images\constraint-vertical.svg" />
+    <None Remove="images\part-chamfer.svg" />
+    <None Remove="images\part-fillet.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="devDept.Eyeshot.Control.Wpf" Version="2024.3.512" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Data.Desktop.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Data.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.DataAccess.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v21.2.UI">
+      <HintPath>..\library\DevExpress\DevExpress.DataAccess.v21.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataVisualization.v21.2.Core">
+      <HintPath>..\library\DevExpress\DevExpress.DataVisualization.v21.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Diagram.v21.2.Core">
+      <HintPath>..\library\DevExpress\DevExpress.Diagram.v21.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Dialogs.v21.2.Core">
+      <HintPath>..\library\DevExpress\DevExpress.Dialogs.v21.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Docs.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Docs.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Images.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Images.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Map.v21.2.Core">
+      <HintPath>..\library\DevExpress\DevExpress.Map.v21.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Mvvm.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Mvvm.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v21.2.Core">
+      <HintPath>..\library\DevExpress\DevExpress.Office.v21.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v21.2.Core">
+      <HintPath>..\library\DevExpress\DevExpress.Pdf.v21.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v21.2.Drawing">
+      <HintPath>..\library\DevExpress\DevExpress.Pdf.v21.2.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v21.2.Core">
+      <HintPath>..\library\DevExpress\DevExpress.PivotGrid.v21.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v21.2.Core">
+      <HintPath>..\library\DevExpress\DevExpress.Printing.v21.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v21.2.Core">
+      <HintPath>..\library\DevExpress\DevExpress.RichEdit.v21.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v21.2.Export">
+      <HintPath>..\library\DevExpress\DevExpress.RichEdit.v21.2.Export.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Snap.v21.2.Core">
+      <HintPath>..\library\DevExpress\DevExpress.Snap.v21.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v21.2.Core">
+      <HintPath>..\library\DevExpress\DevExpress.Sparkline.v21.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v21.2.Core">
+      <HintPath>..\library\DevExpress\DevExpress.Spreadsheet.v21.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Utils.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v21.2.UI">
+      <HintPath>..\library\DevExpress\DevExpress.Utils.v21.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Carousel.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.Carousel.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Charts.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.Charts.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.CodeView.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.CodeView.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Controls.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.Controls.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Core.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.Core.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.DataAccess.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.DataAccess.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Diagram.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.Diagram.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Docking.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.Docking.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.DocumentViewer.v21.2.Core">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.DocumentViewer.v21.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.ExpressionEditor.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.ExpressionEditor.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Gantt.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.Gantt.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Grid.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.Grid.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Grid.v21.2.Core">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.Grid.v21.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Grid.v21.2.Extensions">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.Grid.v21.2.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Layout.v21.2.Core">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.Layout.v21.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.LayoutControl.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.LayoutControl.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Map.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.Map.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.NavBar.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.NavBar.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Office.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.Office.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.PdfViewer.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.PdfViewer.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.PivotGrid.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.PivotGrid.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Printing.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.Printing.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.PropertyGrid.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.PropertyGrid.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.ReportDesigner.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.ReportDesigner.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Ribbon.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.Ribbon.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.RichEdit.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.RichEdit.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Scheduling.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.Scheduling.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2016WhiteSE.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.Themes.Office2016WhiteSE.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2019White.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.Themes.Office2019White.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.VS2019Light.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.Themes.VS2019Light.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Win10Light.v21.2">
+      <HintPath>..\library\DevExpress\DevExpress.Xpf.Themes.Win10Light.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Pulse.PLMSuite.Images">
+      <HintPath>..\library\Pulse\Pulse.PLMSuite.Images.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Green.ico" />
+    <Resource Include="images\constraint-angle-driven.svg" />
+    <Resource Include="images\constraint-diameter-driven.svg" />
+    <Resource Include="images\constraint-distance-driven.svg" />
+    <Resource Include="images\constraint-equal.svg" />
+    <Resource Include="images\constraint-horizontal.svg" />
+    <Resource Include="images\constraint-parallel.svg" />
+    <Resource Include="images\constraint-perpendicular.svg" />
+    <Resource Include="images\constraint-tangent.svg" />
+    <Resource Include="images\constraint-vertical.svg" />
+    <Resource Include="images\part-chamfer.svg" />
+    <Resource Include="images\part-fillet.svg" />
+  </ItemGroup>
+</Project>
