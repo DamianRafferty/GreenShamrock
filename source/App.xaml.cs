@@ -2,7 +2,7 @@
 
 namespace Pulse.PLMSuite
 {
-    public partial class App : Application
+    public partial class Modeller : Application
     {
     }
 }
