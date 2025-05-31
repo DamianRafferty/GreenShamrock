@@ -776,14 +776,13 @@
                 </dxd:LayoutPanel>
 
                 <!--  Document group for the viewport  -->
-                <dxd:DocumentGroup dxd:AutoHideGroup.IsAutoHideCenter="True" AllowDock="False" AllowFloat="False" AllowDrag="False"
-                                     ShowTabHeaders="False" >
-                    <dxd:DocumentPanel Caption="Model Name">
-                        <Grid>
-                            <ContentControl Content="{Binding CurrentDocument}" />
-                        </Grid>
-                    </dxd:DocumentPanel>
-                </dxd:DocumentGroup>
+                <dxd:DocumentGroup dxd:AutoHideGroup.IsAutoHideCenter="True"
+                                    AllowDock="False"
+                                    AllowFloat="False"
+                                    AllowDrag="False"
+                                    ItemsSource="{Binding Documents}"
+                                    SelectedItem="{Binding SelectedDocument}"
+                                    ShowTabHeaders="True" />
 
             </dxd:LayoutGroup>
         </dxd:DockLayoutManager>
