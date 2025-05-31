@@ -2,5 +2,5 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:ctrl="clr-namespace:Pulse.PLMSuite.Modeller.Controls">
-    <ctrl:Viewport3D />
+    <ctrl:Viewport3D Document="{Binding Document}" />
 </UserControl>
