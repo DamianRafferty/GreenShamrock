@@ -780,62 +780,7 @@
                                      ShowTabHeaders="False" >
                     <dxd:DocumentPanel Caption="Model Name">
                         <Grid>
-                            <ctrl:Viewport3D>
-                                <ddes:Design.ViewportBorder>
-                                    <ddes:BorderSettings Visible="False" />
-                                </ddes:Design.ViewportBorder>
-                                <ddes:Design.ProgressBar>
-                                    <ddes:ProgressBar Lighting="False" />
-                                </ddes:Design.ProgressBar>
-                                <ddes:Design.Viewports>
-                                    <ddes:Viewport DisplayMode="Rendered" InitialView="Dimetric">
-                                        <ddes:Viewport.Background>
-                                            <ddes:BackgroundSettings
-                                                BottomColor="#E9EEF1"
-                                                StyleMode="Solid"
-                                                TopColor="#E9EEF1" />
-                                        </ddes:Viewport.Background>
-                                        <ddes:Viewport.CoordinateSystemIcon>
-                                            <ddes:CoordinateSystemIcon Lighting="False" Visible="False" />
-                                        </ddes:Viewport.CoordinateSystemIcon>
-                                        <ddes:Viewport.Camera>
-                                            <Eyeshot:Camera
-                                                Distance="380"
-                                                FocalLength="40"
-                                                NearPlaneDistanceFactor="0.001"
-                                                ProjectionMode="Orthographic" />
-                                        </ddes:Viewport.Camera>
-                                        <ddes:Viewport.Grids>
-                                            <ddes:Grid
-                                                AutoSize="False"
-                                                Lighting="False"
-                                                Max="100, 100"
-                                                Min="-100, -100"
-                                                Step="10"
-                                                Visible="False" />
-                                        </ddes:Viewport.Grids>
-                                        <ddes:Viewport.OriginSymbols>
-                                            <ddes:OriginSymbol Lighting="False" Visible="False" />
-                                        </ddes:Viewport.OriginSymbols>
-                                        <ddes:Viewport.ToolBars>
-                                            <ddes:ToolBar Visible="False">
-                                                <ddes:ToolBar.Buttons>
-                                                    <ddes:HomeToolBarButton />
-                                                    <ddes:MagnifyingGlassToolBarButton />
-                                                    <ddes:ZoomWindowToolBarButton />
-                                                    <ddes:ZoomToolBarButton />
-                                                    <ddes:PanToolBarButton />
-                                                    <ddes:RotateToolBarButton />
-                                                    <ddes:ZoomFitToolBarButton />
-                                                </ddes:ToolBar.Buttons>
-                                            </ddes:ToolBar>
-                                        </ddes:Viewport.ToolBars>
-                                        <ddes:Viewport.ViewCubeIcon>
-                                            <ddes:ViewCubeIcon ShowShadow="False" Lighting="True" ShowRing="False" />
-                                        </ddes:Viewport.ViewCubeIcon>
-                                    </ddes:Viewport>
-                                </ddes:Design.Viewports>
-                            </ctrl:Viewport3D>
+                            <ContentControl Content="{Binding CurrentDocument}" />
                         </Grid>
                     </dxd:DocumentPanel>
                 </dxd:DocumentGroup>
