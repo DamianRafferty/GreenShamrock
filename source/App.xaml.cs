@@ -1,8 +1,8 @@
 ﻿using System.Windows;
 
-namespace Pulse.PLMSuite
+namespace Pulse.PLMSuite.Modeller
 {
-    public partial class Modeller : Application
+    public partial class App : Application
     {
     }
 }

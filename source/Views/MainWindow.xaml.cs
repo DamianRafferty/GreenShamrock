@@ -16,7 +16,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Pulse.PLMSuite
+namespace Pulse.PLMSuite.Modeller.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
