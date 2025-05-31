@@ -19,7 +19,9 @@
             xmlns:dxn="http://schemas.devexpress.com/winfx/2008/xaml/core/internal"
             xmlns:dxprg="http://schemas.devexpress.com/winfx/2008/xaml/propertygrid"
             xmlns:dxprgt="http://schemas.devexpress.com/winfx/2008/xaml/propertygrid/themekeys"
-            xmlns:sys="clr-namespace:System;assembly=mscorlib">
+            xmlns:sys="clr-namespace:System;assembly=mscorlib"
+            xmlns:vm="clr-namespace:Pulse.PLMSuite.ViewModels"
+            xmlns:views="clr-namespace:Pulse.PLMSuite.Modeller.Views">
 
             <!--  Converters  -->
 
@@ -562,6 +564,17 @@
                     </Setter.Value>
                 </Setter>
             </Style>
+
+            <!-- Document View Templates -->
+            <DataTemplate DataType="{x:Type vm:PartDocumentViewModel}">
+                <views:PartDocumentView />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:AssemblyDocumentViewModel}">
+                <views:AssemblyDocumentView />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:DrawingDocumentViewModel}">
+                <views:DrawingDocumentView />
+            </DataTemplate>
 
         </ResourceDictionary>
     </Application.Resources>
