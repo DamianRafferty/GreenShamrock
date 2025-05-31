@@ -26,7 +26,7 @@ namespace Pulse.PLMSuite.Modeller.Views
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new MainWindowViewModel(new MessageService());
+            DataContext = new MainWindowViewModel(new MessageService(), new NewDocumentDialogService());
         }
     }
 }
