@@ -2,6 +2,7 @@ using DevExpress.Mvvm;
 using Pulse.PLMSuite.Services;
 using Pulse.PLMSuite.Modeller;
 using Pulse.PLMSuite.Modeller.Services;
+using System.Collections.ObjectModel;
 
 namespace Pulse.PLMSuite.ViewModels
 {
@@ -10,11 +11,12 @@ namespace Pulse.PLMSuite.ViewModels
         private readonly IMessageService _messageService;
         private readonly INewDocumentService _newDocumentService;
 
-        private object _currentDocument;
-        public object CurrentDocument
+        private object _selectedDocument;
+        public ObservableCollection<object> Documents { get; }
+        public object SelectedDocument
         {
-            get => _currentDocument;
-            set => SetProperty(ref _currentDocument, value, nameof(CurrentDocument));
+            get => _selectedDocument;
+            set => SetProperty(ref _selectedDocument, value, nameof(SelectedDocument));
         }
 
         public DelegateCommand NewCommand { get; }
@@ -24,6 +26,7 @@ namespace Pulse.PLMSuite.ViewModels
             _messageService = messageService;
             _newDocumentService = newDocumentService;
 
+            Documents = new ObservableCollection<object>();
             NewCommand = new DelegateCommand(OnNew);
         }
 
@@ -33,17 +36,24 @@ namespace Pulse.PLMSuite.ViewModels
             if (type == null)
                 return;
 
+            object document = null;
             switch (type)
             {
                 case DocumentType.Part:
-                    CurrentDocument = new PartDocumentViewModel();
+                    document = new PartDocumentViewModel();
                     break;
                 case DocumentType.Assembly:
-                    CurrentDocument = new AssemblyDocumentViewModel();
+                    document = new AssemblyDocumentViewModel();
                     break;
                 case DocumentType.Drawing:
-                    CurrentDocument = new DrawingDocumentViewModel();
+                    document = new DrawingDocumentViewModel();
                     break;
+            }
+
+            if (document != null)
+            {
+                Documents.Add(document);
+                SelectedDocument = document;
             }
         }
     }
