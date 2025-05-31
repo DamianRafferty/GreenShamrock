@@ -8,17 +8,17 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Green.ico" />
-    <None Remove="images\constraint-angle-driven.svg" />
-    <None Remove="images\constraint-diameter-driven.svg" />
-    <None Remove="images\constraint-distance-driven.svg" />
-    <None Remove="images\constraint-equal.svg" />
-    <None Remove="images\constraint-horizontal.svg" />
-    <None Remove="images\constraint-parallel.svg" />
-    <None Remove="images\constraint-perpendicular.svg" />
-    <None Remove="images\constraint-tangent.svg" />
-    <None Remove="images\constraint-vertical.svg" />
-    <None Remove="images\part-chamfer.svg" />
-    <None Remove="images\part-fillet.svg" />
+    <None Remove="..\resources\images\constraint-angle-driven.svg" />
+    <None Remove="..\resources\images\constraint-diameter-driven.svg" />
+    <None Remove="..\resources\images\constraint-distance-driven.svg" />
+    <None Remove="..\resources\images\constraint-equal.svg" />
+    <None Remove="..\resources\images\constraint-horizontal.svg" />
+    <None Remove="..\resources\images\constraint-parallel.svg" />
+    <None Remove="..\resources\images\constraint-perpendicular.svg" />
+    <None Remove="..\resources\images\constraint-tangent.svg" />
+    <None Remove="..\resources\images\constraint-vertical.svg" />
+    <None Remove="..\resources\images\part-chamfer.svg" />
+    <None Remove="..\resources\images\part-fillet.svg" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="devDept.Eyeshot.Control.Wpf" Version="2024.3.512" />
@@ -195,16 +195,16 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Green.ico" />
-    <Resource Include="images\constraint-angle-driven.svg" />
-    <Resource Include="images\constraint-diameter-driven.svg" />
-    <Resource Include="images\constraint-distance-driven.svg" />
-    <Resource Include="images\constraint-equal.svg" />
-    <Resource Include="images\constraint-horizontal.svg" />
-    <Resource Include="images\constraint-parallel.svg" />
-    <Resource Include="images\constraint-perpendicular.svg" />
-    <Resource Include="images\constraint-tangent.svg" />
-    <Resource Include="images\constraint-vertical.svg" />
-    <Resource Include="images\part-chamfer.svg" />
-    <Resource Include="images\part-fillet.svg" />
+    <Resource Include="..\resources\images\constraint-angle-driven.svg" />
+    <Resource Include="..\resources\images\constraint-diameter-driven.svg" />
+    <Resource Include="..\resources\images\constraint-distance-driven.svg" />
+    <Resource Include="..\resources\images\constraint-equal.svg" />
+    <Resource Include="..\resources\images\constraint-horizontal.svg" />
+    <Resource Include="..\resources\images\constraint-parallel.svg" />
+    <Resource Include="..\resources\images\constraint-perpendicular.svg" />
+    <Resource Include="..\resources\images\constraint-tangent.svg" />
+    <Resource Include="..\resources\images\constraint-vertical.svg" />
+    <Resource Include="..\resources\images\part-chamfer.svg" />
+    <Resource Include="..\resources\images\part-fillet.svg" />
   </ItemGroup>
 </Project>
