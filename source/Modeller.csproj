@@ -4,7 +4,7 @@
     <TargetFramework>net48</TargetFramework>
     <UseWPF>true</UseWPF>
     <AssemblyName>Pulse.PLMSuite.$(MSBuildProjectName)</AssemblyName>
-    <RootNamespace>Pulse.PLMSuite</RootNamespace>
+    <RootNamespace>Pulse.PLMSuite.Modeller</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Green.ico" />

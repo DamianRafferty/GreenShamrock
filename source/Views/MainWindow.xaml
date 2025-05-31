@@ -1,5 +1,5 @@
 ﻿<Window
-    x:Class="Pulse.PLMSuite.MainWindow"
+    x:Class="Pulse.PLMSuite.Modeller.Views.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:Eyeshot="clr-namespace:devDept.Eyeshot;assembly=devDept.Eyeshot.v2024"
@@ -11,9 +11,9 @@
     xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
     xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
     xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon"
-    xmlns:local="clr-namespace:Pulse.PLMSuite"
+    xmlns:local="clr-namespace:Pulse.PLMSuite.Modeller.Views"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Title="Pulse PLM | CAD Modeller"
+    Title="Pulse PLM | Modeller"
     Width="1024"
     Height="768"
     dx:ThemeManager.Theme="Office2019White"
