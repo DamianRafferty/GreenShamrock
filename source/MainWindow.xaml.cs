@@ -1,6 +1,7 @@
 ﻿using DevExpress.Xpf.Core;
 using DevExpress.Xpf.Ribbon;
 using Pulse.PLMSuite.ViewModels;
+using Pulse.PLMSuite.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,7 +26,7 @@ namespace Pulse.PLMSuite
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new MainWindowViewModel();
+            DataContext = new MainWindowViewModel(new MessageService());
         }
     }
 }
