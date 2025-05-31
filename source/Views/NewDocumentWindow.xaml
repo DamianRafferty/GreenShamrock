@@ -1,0 +1,16 @@
+<Window x:Class="Pulse.PLMSuite.Modeller.Views.NewDocumentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="New Document" SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterOwner">
+    <StackPanel Margin="10">
+        <TextBlock Text="Select document type:" Margin="0,0,0,5" />
+        <RadioButton x:Name="partRadio" Content="Part" GroupName="DocumentType" Margin="0,0,0,5" Checked="OnPartChecked"/>
+        <RadioButton x:Name="assemblyRadio" Content="Assembly" GroupName="DocumentType" Margin="0,0,0,5" Checked="OnAssemblyChecked"/>
+        <RadioButton x:Name="drawingRadio" Content="Drawing" GroupName="DocumentType" Margin="0,0,0,5" Checked="OnDrawingChecked"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+            <Button Content="OK" Width="75" Margin="0,0,5,0" IsDefault="True" Command="{Binding OKCommand}" />
+            <Button Content="Cancel" Width="75" IsCancel="True" Command="{Binding CancelCommand}" />
+        </StackPanel>
+    </StackPanel>
+</Window>
