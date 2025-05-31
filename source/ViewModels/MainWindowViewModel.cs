@@ -12,6 +12,7 @@ namespace Pulse.PLMSuite.ViewModels
         public MainWindowViewModel(IMessageService messageService)
         {
             _messageService = messageService;
+
             NewCommand = new DelegateCommand(OnNew);
         }
 
