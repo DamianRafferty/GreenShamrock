@@ -275,7 +275,7 @@
                                     Margin="0"
                                     VerticalAlignment="Top">
                                     <Image.Source>
-                                        <dx:SvgImageSource Uri="pack://application:,,,/Pulse.PLMSuite.Modeller;component/resources/images/part-fillet.svg" />
+                                        <dx:SvgImageSource Uri="pack://application:,,,/Pulse.PLMSuite.Modeller;component/Resources/images/part-fillet.svg" />
                                     </Image.Source>
                                 </Image>
                                 <TextBlock
@@ -300,7 +300,7 @@
                                     Margin="0"
                                     VerticalAlignment="Top">
                                     <Image.Source>
-                                        <dx:SvgImageSource Uri="pack://application:,,,/Pulse.PLMSuite.Modeller;component/resources/images/part-chamfer.svg" />
+                                        <dx:SvgImageSource Uri="pack://application:,,,/Pulse.PLMSuite.Modeller;component/Resources/images/part-chamfer.svg" />
                                     </Image.Source>
                                 </Image>
                                 <TextBlock
@@ -449,7 +449,7 @@
                                     Height="16"
                                     HorizontalAlignment="Left">
                                     <Image.Source>
-                                        <dx:SvgImageSource Uri="pack://application:,,,/Pulse.PLMSuite.Modeller;component/resources/images/constraint-diameter-driven.svg" />
+                                        <dx:SvgImageSource Uri="pack://application:,,,/Pulse.PLMSuite.Modeller;component/Resources/images/constraint-diameter-driven.svg" />
                                     </Image.Source>
                                 </Image>
                                 <TextBlock
@@ -475,7 +475,7 @@
                                     Height="16"
                                     HorizontalAlignment="Left">
                                     <Image.Source>
-                                        <dx:SvgImageSource Uri="pack://application:,,,/Pulse.PLMSuite.Modeller;component/resources/images/constraint-distance-driven.svg" />
+                                        <dx:SvgImageSource Uri="pack://application:,,,/Pulse.PLMSuite.Modeller;component/Resources/images/constraint-distance-driven.svg" />
                                     </Image.Source>
                                 </Image>
                                 <TextBlock
@@ -500,7 +500,7 @@
                                     Height="16"
                                     HorizontalAlignment="Left">
                                     <Image.Source>
-                                        <dx:SvgImageSource Uri="pack://application:,,,/Pulse.PLMSuite.Modeller;component/resources/images/constraint-vertical.svg" />
+                                        <dx:SvgImageSource Uri="pack://application:,,,/Pulse.PLMSuite.Modeller;component/Resources/images/constraint-vertical.svg" />
                                     </Image.Source>
                                 </Image>
                                 <TextBlock
@@ -524,7 +524,7 @@
                                     Height="16"
                                     HorizontalAlignment="Left">
                                     <Image.Source>
-                                        <dx:SvgImageSource Uri="pack://application:,,,/Pulse.PLMSuite.Modeller;component/resources/images/constraint-horizontal.svg" />
+                                        <dx:SvgImageSource Uri="pack://application:,,,/Pulse.PLMSuite.Modeller;component/Resources/images/constraint-horizontal.svg" />
                                     </Image.Source>
                                 </Image>
                                 <TextBlock
@@ -548,7 +548,7 @@
                                     Height="16"
                                     HorizontalAlignment="Left">
                                     <Image.Source>
-                                        <dx:SvgImageSource Uri="pack://application:,,,/Pulse.PLMSuite.Modeller;component/resources/images/constraint-perpendicular.svg" />
+                                        <dx:SvgImageSource Uri="pack://application:,,,/Pulse.PLMSuite.Modeller;component/Resources/images/constraint-perpendicular.svg" />
                                     </Image.Source>
                                 </Image>
                                 <TextBlock
@@ -573,7 +573,7 @@
                                     Height="16"
                                     HorizontalAlignment="Left">
                                     <Image.Source>
-                                        <dx:SvgImageSource Uri="pack://application:,,,/Pulse.PLMSuite.Modeller;component/resources/images/constraint-tangent.svg" />
+                                        <dx:SvgImageSource Uri="pack://application:,,,/Pulse.PLMSuite.Modeller;component/Resources/images/constraint-tangent.svg" />
                                     </Image.Source>
                                 </Image>
                                 <TextBlock
@@ -599,7 +599,7 @@
                                     Height="16"
                                     HorizontalAlignment="Left">
                                     <Image.Source>
-                                        <dx:SvgImageSource Uri="pack://application:,,,/Pulse.PLMSuite.Modeller;component/resources/images/constraint-equal.svg" />
+                                        <dx:SvgImageSource Uri="pack://application:,,,/Pulse.PLMSuite.Modeller;component/Resources/images/constraint-equal.svg" />
                                     </Image.Source>
                                 </Image>
                                 <TextBlock
@@ -625,7 +625,7 @@
                                     Height="16"
                                     HorizontalAlignment="Left">
                                     <Image.Source>
-                                        <dx:SvgImageSource Uri="pack://application:,,,/Pulse.PLMSuite.Modeller;component/resources/images/constraint-parallel.svg" />
+                                        <dx:SvgImageSource Uri="pack://application:,,,/Pulse.PLMSuite.Modeller;component/Resources/images/constraint-parallel.svg" />
                                     </Image.Source>
                                 </Image>
                                 <TextBlock
@@ -651,7 +651,7 @@
                                     Height="16"
                                     HorizontalAlignment="Left">
                                     <Image.Source>
-                                        <dx:SvgImageSource Uri="pack://application:,,,/Pulse.PLMSuite.Modeller;component/resources/images/constraint-angle-driven.svg" />
+                                        <dx:SvgImageSource Uri="pack://application:,,,/Pulse.PLMSuite.Modeller;component/Resources/images/constraint-angle-driven.svg" />
                                     </Image.Source>
                                 </Image>
                                 <TextBlock
