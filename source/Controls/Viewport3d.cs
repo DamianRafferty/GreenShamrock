@@ -6,7 +6,7 @@ namespace Pulse.PLMSuite.Modeller.Controls
     /// <summary>
     /// Customized Eyeshot Design control with additional behavior.
     /// </summary>
-    public class Viewport3d : Design
+    public class Viewport3D : Design
     {
         /// <summary>
         /// Resets the active view by performing a ZoomFit.

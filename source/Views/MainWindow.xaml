@@ -780,7 +780,7 @@
                                      ShowTabHeaders="False" >
                     <dxd:DocumentPanel Caption="Model Name">
                         <Grid>
-                            <ctrl:Viewport3d>
+                            <ctrl:Viewport3D>
                                 <ddes:Design.ViewportBorder>
                                     <ddes:BorderSettings Visible="False" />
                                 </ddes:Design.ViewportBorder>
@@ -835,7 +835,7 @@
                                         </ddes:Viewport.ViewCubeIcon>
                                     </ddes:Viewport>
                                 </ddes:Design.Viewports>
-                            </ctrl:Viewport3d>
+                            </ctrl:Viewport3D>
                         </Grid>
                     </dxd:DocumentPanel>
                 </dxd:DocumentGroup>
