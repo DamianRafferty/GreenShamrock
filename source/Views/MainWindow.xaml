@@ -12,6 +12,7 @@
     xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
     xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon"
     xmlns:local="clr-namespace:Pulse.PLMSuite.Modeller.Views"
+    xmlns:ctrl="clr-namespace:Pulse.PLMSuite.Modeller.Controls"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="Pulse PLM | Modeller"
     Width="1024"
@@ -779,7 +780,7 @@
                                      ShowTabHeaders="False" >
                     <dxd:DocumentPanel Caption="Model Name">
                         <Grid>
-                            <ddes:Design>
+                            <ctrl:Viewport3d>
                                 <ddes:Design.ViewportBorder>
                                     <ddes:BorderSettings Visible="False" />
                                 </ddes:Design.ViewportBorder>
@@ -834,7 +835,7 @@
                                         </ddes:Viewport.ViewCubeIcon>
                                     </ddes:Viewport>
                                 </ddes:Design.Viewports>
-                            </ddes:Design>
+                            </ctrl:Viewport3d>
                         </Grid>
                     </dxd:DocumentPanel>
                 </dxd:DocumentGroup>
