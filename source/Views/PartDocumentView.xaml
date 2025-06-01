@@ -4,6 +4,6 @@
              xmlns:ctrl="clr-namespace:Pulse.PLMSuite.Modeller.Controls"
              xmlns:wfi="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration">
     <wfi:WindowsFormsHost>
-        <ctrl:Viewport3D Document="{Binding Document}" />
+        <ctrl:Viewport3D />
     </wfi:WindowsFormsHost>
 </UserControl>
