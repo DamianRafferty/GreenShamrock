@@ -3,6 +3,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net48</TargetFramework>
     <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
     <AssemblyName>Pulse.PLMSuite.$(MSBuildProjectName)</AssemblyName>
     <RootNamespace>Pulse.PLMSuite.Modeller</RootNamespace>
   </PropertyGroup>
@@ -21,7 +22,7 @@
     <None Remove="Resources\images\part-fillet.svg" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="devDept.Eyeshot.Control.Wpf" Version="2024.3.512" />
+    <PackageReference Include="devDept.Eyeshot.Control.Win" Version="2024.3.512" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="App.xaml" />
