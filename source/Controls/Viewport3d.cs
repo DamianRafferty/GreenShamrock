@@ -1,5 +1,5 @@
 using devDept.Eyeshot.Control;
-using System.Windows.Input;
+using System.Windows.Forms;
 
 namespace Pulse.PLMSuite.Modeller.Controls
 {
@@ -21,11 +21,11 @@ namespace Pulse.PLMSuite.Modeller.Controls
         /// for resetting the view.
         /// </summary>
         /// <param name="e">Key event data.</param>
-        protected override void OnPreviewKeyDown(KeyEventArgs e)
+        protected override void OnKeyDown(KeyEventArgs e)
         {
-            base.OnPreviewKeyDown(e);
+            base.OnKeyDown(e);
 
-            if (Keyboard.Modifiers == ModifierKeys.Control && e.Key == Key.R)
+            if (e.Control && e.KeyCode == Keys.R)
             {
                 ResetView();
                 e.Handled = true;
